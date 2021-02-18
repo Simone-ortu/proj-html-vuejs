@@ -14,44 +14,70 @@
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
         crossorigin="anonymous" />
     <!-- font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Meie+Script&family=Roboto+Condensed:wght@400;700&display=swap"
-        rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300;700&family=Questrial&family=Qwigley&display=swap"
+            rel="stylesheet">
 
-    <title>Demo for writers and authors</title>
+        <title>Demo for writers and authors</title>
 </head>
 
 <body>
     <div id='app' class="container">
-        <header>
+        <header class="top">
             <div class="nav-bar">
-                <!-- This doesn't change -->
+                <div class="logo"><img src="img/author-logo-round.png" alt="logo"></div>
+                <ul>
+                    <li class="questrial" v-for='page in pages'><a href="#">
+                            {{page}}
+                        </a></li>
+                    <li>
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                </ul>
+
             </div>
             <div class="jumbotron">
-                <!-- this changes:
-                -make a slider on vue.js b4 starting 
-                -slider: the slider changes inside the div newspaper-critique
-                -newspaper-critique : 'critique' h2?, newspaper change font
-            -->
-                <div class="slider">
-                    <div class="crit">
-                        {{critiques[counter].crit}}
-                        {{critiques[counter].newspaper}}
+                <div class="author">
+                    <h1 class="qwigley">Damon Vaughn</h1>
+                    <!-- slider -->
+                    <div class="slider">
+                        <div class="crit nwsrdr">
+                            {{critiques[counter].crit}}
+                        </div>
+                        <div class="newspaper nwsrdr">
+                            -{{critiques[counter].newspaper}}
+                        </div>
                     </div>
-
-
-
-                    <i v-on:Click="counter -= 1" class="fas fa-arrow-left"></i>
-                    <i v-on:Click="counter += 1" class="fas fa-arrow-right"></i>
+                    <div  v-on:Click="counter --" class="arrow-left">
+                        <i  class="fas fa-arrow-left"></i>
+                    </div>
+                    <div v-on:Click="counter ++" class="arrow-right">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
                 </div>
-
-
-
-
                 <!-- -placing buttons   -->
-
             </div>
         </header>
+        <div class="buy-box">
+            <img src="img\book-widget.png" alt="book-widget">
+            <div class="latest-release">
+                <h3>Latest Book Release</h3>
+                <p class="book nwsrdr">D. VAUGHN AUTOBIOGRAPHY</p>
+                <p class="plot"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore soluta deserunt repudiandae quod illum, suscipit exercitationem ad amet placeat iste velit beatae assumenda.</p>
+            </div>
+            <div class="buy-button-am">Buy</div>
+            <div class="buy-button-ap">Buy</div>
+
+        </div>
+
+
+
+
+
+
+
+
 
 
 

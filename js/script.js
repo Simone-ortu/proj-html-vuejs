@@ -16,6 +16,15 @@ var app = new Vue({
                 newspaper: 'The New York Times 3'
             }
         ],
+        pages:[
+            'Home',
+            'About Me',
+            'Testimonials',
+            'My Blog',
+            'Meetups',
+            'Shop',
+            'Contact Me'
+        ]
     },
    
            

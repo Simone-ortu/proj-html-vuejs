@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 80vw;
+    margin: 0 auto;
+}
+.nwsrdr{
+    font-family: 'Newsreader', serif;
+}
+.questrial{
+    font-family: 'Questrial', sans-serif;
+}
+.qwigley{
+    font-family: 'Qwigley', cursive;
+}
+/* header */
+.top{
+    width: 100%;
+    height: 700px;
+    background-image: url("../img/hero-07-2x.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 100% 700px;
+    position: relative;
+}
+/* header > nav-bar */
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+}
+.nav-bar .logo img{
+    width: 120px;
+    position: absolute;
+    left: 7.5%;
+    
+}
+.nav-bar li{
+    display: inline-block;
+    padding: 20px;
+    text-align: right;
+}
+.nav-bar li a{
+    color: white;
+    text-decoration: none;
+    
+}
+.nav-bar li a:active,
+.nav-bar li a:focus{
+    color: #f3b329;
+    border-top: 5px solid #f3b329 ;
+    padding-top: 18px;
+}
+ /* jumbtron */
+ .jumbotron{
+     position: relative;
+ }
+ .jumbotron .author{
+     width: 600px;
+     position: absolute;
+     left: 10%;
+     transform: translateY(55%);
+ }
+ .jumbotron .author h1{
+     color: #f3b329  ;
+     
+     font-size: 75px;
+ }
+.jumbotron .slider .crit{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 45px;
+    
+}
+.jumbotron .slider .newspaper{
+    margin-top: 25px;
+    color: lightgray;
+    font-weight: 100;
+    font-style: italic;
+    margin-bottom: 25px;
+   
+}
+.jumbotron .arrow-left{
+    display: inline;
+    line-height: 45px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.623);
+    border-radius: 5px;
+}
+.jumbotron .arrow-left i{
+    color: white;
+}
+.jumbotron .arrow-right{
+    display: inline;
+    line-height: 45px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.623);
+    border-radius: 5px;
+}
+.jumbotron .arrow-right i{
+    color: white;
+}
+.buy-box{
+    width: 500px;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    background-color: white;
+} 
+.buy-box img{
+ width: 30%;
+ margin-left: 40px;
+ margin-top: 40px;
+}
+.latest-release{
+    margin-top: 40px;
+} 
+.latest-release h3{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.latest-release .book{
+    color: #f3b329  ;
+    font-weight: bold;
+    font-size: smaller;
+     
+}
+.latest-release .plot{
+    font-size: smaller;
+    margin-top: 15px;
+    padding-right: 25px;
+}
+.buy-bottom-am{
+    border: 1px solid #3da698;
+    position: absolute;
+    align-self: end;
+}
+.buy-bottom-ap{
+    border: 1px solid #3da698;
+    position: absolute;
+    align-self: end;
+}
