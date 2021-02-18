@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Meie+Script&family=Roboto+Condensed:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <title>Demo for writers and authors</title>
+</head>
+
+<body>
+    <div id='app' class="container">
+        <header>
+            <div class="nav-bar">
+                <!-- This doesn't change -->
+            </div>
+            <div class="jumbotron">
+                <!-- this changes:
+                -make a slider on vue.js b4 starting 
+                -slider: the slider changes inside the div newspaper-critique
+                -newspaper-critique : 'critique' h2?, newspaper change font
+            -->
+                <div class="slider">
+                    <div class="crit">
+                        {{critiques[counter].crit}}
+                        {{critiques[counter].newspaper}}
+                    </div>
+
+
+
+                    <i v-on:Click="counter -= 1" class="fas fa-arrow-left"></i>
+                    <i v-on:Click="counter += 1" class="fas fa-arrow-right"></i>
+                </div>
+
+
+
+
+                <!-- -placing buttons   -->
+
+            </div>
+        </header>
+
+
+
+
+
+    </div>
+    <script src="js/script.js" charset="utf-8"></script>
+</body>
+
+</html>
