@@ -16,6 +16,11 @@ body{
 .qwigley{
     font-family: 'Qwigley', cursive;
 }
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 /* header */
 .top{
     width: 100%;
@@ -108,11 +113,8 @@ body{
 .buy-box{
     width: 500px;
     height: 250px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     position: absolute;
-    right: 10%;
+    right: 9%;
     top: 50%;
     background-color: white;
 } 
@@ -120,11 +122,17 @@ body{
  width: 30%;
  margin-left: 40px;
  margin-top: 40px;
+ float: left;
+ display: inline;
 }
 .latest-release{
+    width:  200px;
+    height: 70px;
     margin-top: 40px;
+    display: inline;
 } 
 .latest-release h3{
+    margin-top: 40px;
     margin-bottom: 15px;
     font-size: 20px;
 }
@@ -138,14 +146,98 @@ body{
     font-size: smaller;
     margin-top: 15px;
     padding-right: 25px;
+    margin-bottom: 30px;
 }
-.buy-bottom-am{
-    border: 1px solid #3da698;
-    position: absolute;
-    align-self: end;
+.buy-button{
+    width: 300px;
+    border: 1px solid #3da698; 
+
 }
-.buy-bottom-ap{
+.buy-button-am{
+    width:  150px;
+    display: inline-block;
     border: 1px solid #3da698;
+    
+    
+}
+.buy-button-ap{
+    width: 150px;
+    display: inline-block;
+    border: 1px solid #3da698;
+    
+}
+.more-about{
+    width: 60vw;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+.more-about h1{
+    color: #f3b329 ;
+    font-size: 70px;
+}
+.more-about p{
+    font-size: 30px;
+    line-height: 40px;
+}
+.where-to-find{
+    width: 100%;
+    height: 150px;
+    background-color: #f3ece3 ;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 70px;
+}
+.where-to-find img{
+    width: 180px;
+    height: 55px;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.audiobook{
+    height: 500px;
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.audiobook img{
     position: absolute;
-    align-self: end;
+    top: 16.2%;
+    left: 20%;
+}
+.new-audiobook{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+}
+.new-audiobook h1{
+    color: white;
+}
+.new-audiobook .slogan{
+    color: #f3b329 ;
+    text-transform: uppercase;
+    font-size: small;
+    margin-top: 30px;
+}
+.new-audiobook p{
+    color: white;
+    margin-top: 40px;
+}
+.new-audiobook .kindle-logo{
+    width: 100px;
+    top: 120%;
+    left: 0%;
+}
+.new-audiobook .bn-logo{
+    width: 100px;
+    top: 124%;
+    left: 45%;
+}
+.new-audiobook .audible-logo{
+    width: 100px;
+    top: 124%;
+    left: 90%;
 }

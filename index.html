@@ -14,12 +14,12 @@
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
         crossorigin="anonymous" />
     <!-- font -->
-   <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300;700&family=Questrial&family=Qwigley&display=swap"
-            rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300;700&family=Questrial&family=Qwigley&display=swap"
+        rel="stylesheet">
 
-        <title>Demo for writers and authors</title>
+    <title>Demo for writers and authors</title>
 </head>
 
 <body>
@@ -49,8 +49,8 @@
                             -{{critiques[counter].newspaper}}
                         </div>
                     </div>
-                    <div  v-on:Click="counter --" class="arrow-left">
-                        <i  class="fas fa-arrow-left"></i>
+                    <div v-on:Click="counter --" class="arrow-left">
+                        <i class="fas fa-arrow-left"></i>
                     </div>
                     <div v-on:Click="counter ++" class="arrow-right">
                         <i class="fas fa-arrow-right"></i>
@@ -59,17 +59,52 @@
                 <!-- -placing buttons   -->
             </div>
         </header>
-        <div class="buy-box">
+        <div class="buy-box clearfix">
             <img src="img\book-widget.png" alt="book-widget">
             <div class="latest-release">
-                <h3>Latest Book Release</h3>
+                <h3 class="nwsrdr">Latest Book Release</h3>
                 <p class="book nwsrdr">D. VAUGHN AUTOBIOGRAPHY</p>
-                <p class="plot"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore soluta deserunt repudiandae quod illum, suscipit exercitationem ad amet placeat iste velit beatae assumenda.</p>
+                <p class="plot nwsrdr"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore soluta
+                    deserunt repudiandae quod illum.</p>
             </div>
-            <div class="buy-button-am">Buy</div>
-            <div class="buy-button-ap">Buy</div>
-
+            <div class="buy-buttons">
+                <button><i class="fab fa-amazon">Buy On Amazon</i></button>
+                <button><i class="fab fa-apple">Buy On Apple</i></a></button>
+                <!-- <div class="buy-button-am"><a href="#"><i class="fab fa-amazon">Buy On Amazon</i></a></div> -->
+                <!-- <div class="buy-button-ap"><a href="#"><i class="fab fa-apple">Buy On Apple</i></a></div> -->
+            </div>
         </div>
+        <!-- more-about -->
+        <section class="more-about">
+            <h1 class="qwigley">More About Damon Vaughn</h1>
+            <p class="nwsrdr">Damon Vaughn is a professor of psychology at the University of Toronto, a clinical psychologist and the author of the multi-million copy bestseller "The story of my life."</p>
+            <button>meet the author</button>
+        </section>
+        <!-- where-to-find -->
+       <section class="where-to-find">
+           <img src="img\ebay-logotan-2x-200x66.png" alt="">
+           <img src="img\audible-logotan-2x-200x66.png" alt="">
+           <img src="img\bb-logotan-2x-200x66.png" alt="">
+           <img src="img\kindlefire-logotan-2x-200x66.png" alt="">
+        </section>
+        <section class="audiobook">
+            <img src="img/audible-app-2x-400x418.png" alt="">
+            <div class="new-audiobook nwsrdr">
+                <h1>New Audiobook</h1>
+                <p class="slogan nwsrdr">no time to read? no problem. listen to it</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <img class="kindle-logo" src="img\kindle-logo-tall.png" alt="">
+                <img class="bn-logo" src="img\bn-logo-tall.png" alt="">
+                <img class="audible-logo" src="img\audible-logo.png" alt="">
+            </div>
+
+        </section>
+
+
+           
+
+       
+
 
 
 

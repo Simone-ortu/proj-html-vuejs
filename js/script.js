@@ -24,6 +24,13 @@ var app = new Vue({
             'Meetups',
             'Shop',
             'Contact Me'
+        ],
+        platforms:[
+            'audible-logotan-2x',
+            'ebay-logotan-2x',
+            'bb-logotan-2x',
+            'kindlefire-logotan-2x'
+
         ]
     },
    
